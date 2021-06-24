@@ -40,7 +40,7 @@ message QueryWithInfluxFormatRequest {
 }
 
 message QueryWithInfluxFormatResponse {
-  Results results = 1;
+  repeated Results results = 1;
 }
 
 message Series {
@@ -51,7 +51,7 @@ message Series {
 
 message Results {
   string statement_id = 2;
-  repeated google.protobuf.Any series = 3;
+  repeated Series series = 1;
 }
 
 // QueryWithTableFormat
