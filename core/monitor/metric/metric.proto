@@ -51,7 +51,7 @@ message Series {
 
 message Results {
   string statement_id = 2;
-  repeated Series series = 1;
+  repeated google.protobuf.Any series = 3;
 }
 
 // QueryWithTableFormat
