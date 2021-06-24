@@ -50,7 +50,7 @@ message Series {
 }
 
 message ArrayValues{
-  repeated string values = 1;
+  repeated google.protobuf.Any values = 1;
 }
 
 message Results {
